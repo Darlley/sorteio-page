@@ -1,0 +1,361 @@
+@import "partials/variables";
+
+.container{
+  width: 100%;
+}
+.header{
+  .thumb{
+    .cardHeader{
+      background-color: #ffffffcd;
+      width: 100%;
+      height: 450px;
+      border-radius: 11px;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem;
+      gap: .5rem;
+      
+      .cardTitle{
+        color: $orangeColor;
+        font-size: 3rem;
+      }
+      .cardText{
+        color: $blackColor;
+      }
+      .cardButtom{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+        background-color: $orangeColor;
+        padding: 1rem;
+        border: none;
+        width: 60%;
+        border-radius: 11px;
+        -webkit-border-radius: 11px;
+        -moz-border-radius: 11px;
+        -ms-border-radius: 11px;
+        -o-border-radius: 11px;
+        color: white;
+
+        i{
+          font-size: 1.2rem;
+        }
+      }
+      .cardLink{
+        color: $orangeColor;
+        font-size: 14px;
+        margin-top: 1rem;
+        i{
+          margin: 0 5px 0 5px;
+        }
+      }
+    }
+  }
+}
+
+.main{
+  .sectionContainer{
+  
+    > div{
+      margin: 6rem 2rem;
+    
+      .mainContainerTitle {
+        padding-bottom: 3rem;
+        text-align: left;
+        
+        p{
+          font-size: 1.2rem;
+        }
+      }
+      
+      .cardContainer{
+        display: flex;
+        flex-wrap: wrap;
+        
+        .cardItem{
+  
+          .cardItemTitle{
+            margin-bottom: 1.5rem;
+  
+            i{
+              font-size: 2.5rem;
+            }
+            span {
+              font-size: 2rem;
+            }
+            i{
+              margin-right: 1rem;
+              color: #0084ff;
+              background-color: #E4F2FF;
+              padding: .5rem;
+              border-radius: 11px;
+              -webkit-border-radius: 11px;
+              -moz-border-radius: 11px;
+              -ms-border-radius: 11px;
+              -o-border-radius: 11px;
+            }
+            span{
+              color: $blackColor;
+              font-weight: bold;
+            }
+          }
+          .cardItemDescription{
+  
+          }
+        }
+      }
+    }
+  
+  }
+  .sorteio{
+    padding: 6rem 1rem;
+    background-color: $whiteColor;
+
+    h2{
+      text-align: left;
+      margin-bottom: 6rem;
+    }
+
+    .sorteio__col{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3rem;
+      flex-direction: column;
+
+    }
+    .sorteio__item{
+      width: 100%;
+      padding: 1rem;
+      height: max-content;
+
+      h3{
+        color: $blackColor;
+      }
+
+      
+      &:nth-child(odd){
+        background-color: #fff;
+        border-radius: 11px;
+        box-shadow: 0px 0px 15px -1px #0000003a;
+
+      }
+      &:nth-child(even){
+        span {
+          color: 1px solid red;
+          font-size: 5rem;
+        }
+        ul {
+          li {
+            list-style: none;
+            margin-left: -35px;
+            color: $blackColor;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            i {
+              color: $orangeColor;
+              font-weight: bold;
+              font-size: 1.5rem;
+            }
+          }
+        }
+        a{
+          color: #0091ff;
+          display: flex;
+          align-items: center;
+
+          i{
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+    .itemContainer {
+      justify-content: center;
+      display: flex;
+      
+      .itemContainerDiv2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        span {
+          display: flex;
+          align-items: center;
+          color: $blackColor;
+
+          &:nth-child(1){
+            margin: 5px;
+          }
+
+          img{
+            background-color: $orangeColor;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+          }
+        }
+
+        .itemDescription {
+          display: flex;
+          align-items: center;
+          gap: .5rem;
+           
+          div:nth-child(1) > i {
+            font-size: 1.3rem;
+            color: #0084ff;
+            background-color: #E4F2FF;
+            display: flex;
+            align-items: center;
+            padding: .5rem;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+          }
+          div:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            
+            p {
+              margin: 0;
+              font-size: .75rem;
+            }
+            span {
+              font-weight: bold;
+              color: $blackColor;
+            }
+          }
+
+        }
+      }
+
+      &:nth-child(2){
+        margin-top: 1rem;
+        align-items: center;
+        background-color: $whiteColor;
+        border: 1px solid #E4F2FF;
+        padding: 1rem;
+        border-radius: 11px;
+
+        i {
+          color: #00ce00;
+          font-weight: bold;
+          font-size: 1.3rem;
+          margin-right: 15px;
+        }
+        div p {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .sectionUsers{
+    text-align: center;
+
+    span{
+      font-size: 3rem;      
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .container{
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .header{
+    .thumb{
+      position: relative;
+
+      .cardHeader{
+        position: absolute;
+        padding: 3rem;
+        top: 100px;
+        left: 100px;
+        max-width: 650px;
+      }
+    }
+  }
+  .main{
+    .sectionContainer{
+      > div{
+        margin: 8rem 0;
+        
+        .mainContainerTitle{        
+          padding: 0 6rem 3rem;
+          text-align: center;
+        }
+      }
+      .cardContainer{
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .cardItem{
+          width: calc(100% / 4.5);
+  
+          .cardItemTitle{
+  
+          }
+          .cardItemDescription{
+  
+          }
+  
+        }
+      }
+  
+    }
+    .sorteio{
+      padding: 6rem 3rem;
+
+      h2{
+        text-align: center;
+      }
+      .sorteio__col{
+        flex-direction: row;
+        gap: 3rem;
+
+        &:nth-child(odd){
+          flex-direction: row-reverse;
+        }
+
+      }
+      .sorteio__item{
+        width: calc(100% / 2.5);
+        padding: 4rem;
+      }
+      .itemContainer{
+        gap: 1rem;
+
+        .itemContainerDiv2{
+          gap: 1.5rem;
+
+          span {
+            &:nth-child(1){
+              margin: 0;
+              gap: .5rem;
+            }
+          }
+        }
+
+        &:nth-child(2){
+          gap: .5em;
+        }
+      }
+
+    }
+  }
+}
