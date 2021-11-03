@@ -22,9 +22,9 @@ export default function Slider() {
   return (
     <div className={styles.slider}>
       <Swiper
-        slidesPerView={5}
+        slidesPerView={3}
         spaceBetween={10}
-        slidesPerGroup={5}
+        slidesPerGroup={3}
         loop={true}
         loopFillGroupWithBlank={true}
         pagination={{
@@ -33,7 +33,7 @@ export default function Slider() {
         navigation={true}
         className="mySwiper"
       >
-        <SwiperSlide>
+        <SwiperSlide className={styles.slideCard}>
           <Image src={elipseCard} width={130} height={130} />
         </SwiperSlide>
         <SwiperSlide>

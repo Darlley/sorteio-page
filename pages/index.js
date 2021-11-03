@@ -13,9 +13,7 @@ import Footer from '../components/Footer'
 export default function Home() {
   return (
     <>
-      <div className={styles.container}>
-        <Menu />
-      </div>
+      <Menu />
       <header className={styles.header}>
         <div className={styles.thumb}>
           <Image src={thumb} alt="Thumbnail" width={1441} height={650} />
@@ -276,7 +274,7 @@ export default function Home() {
 
           </section>
         </div>
-        <section className={styles.cta}>
+        <section id="precos" className={styles.cta}>
           <div className={styles.ctaContainer}>
             <h2>Conheça os nossos preços</h2>
             <p>Adquira o carregamento VIP e faça sorteios de forma rápida e segura! E se você tem mais de 300 mil seguidores, aproveite as vantagens exclusivas soteio.com para influenciadores digitais.</p>
@@ -300,7 +298,7 @@ export default function Home() {
             </div>
           </section>
         </div>
-        <section className={styles.aboutSection}>
+        <section id="about" className={styles.aboutSection}>
           <h2>Como funciona?</h2>
 
           <div className={styles.aboutContainer}>

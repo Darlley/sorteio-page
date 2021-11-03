@@ -1,45 +1,6 @@
 @import "partials/variables";
 
-.menu{
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-
-  .logo{
-    font-size: 1.5rem;
-    text-transform: lowercase;
-    margin: 1rem 0;
-
-    > a{
-      color: $orangeColor;
-    }
-  }
-  .item{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    font-size: 1rem;
-  }
-  .languages{
-  }
-}
-
-@media (min-width: 600px) {
-  .menu{
-    flex-direction: row;
-    padding: 0;
-
-    .logo{
-      font-size: 1.5rem;
-      color: $orangeColor;
-      text-transform: lowercase;
-    }
-    .item{
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      font-size: 1rem;
-      color: $blackColor;
-    }
-  }
+.container{
+  max-width: 1200px;
+  background-color: #fff;
 }
