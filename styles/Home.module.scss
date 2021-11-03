@@ -25,28 +25,12 @@
       .cardText{
         color: $blackColor;
       }
-      .cardButtom{
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        margin-top: 1rem;
-        background-color: $orangeColor;
-        padding: 1rem;
-        border: none;
-        width: 60%;
-        border-radius: 11px;
-        -webkit-border-radius: 11px;
-        -moz-border-radius: 11px;
-        -ms-border-radius: 11px;
-        -o-border-radius: 11px;
-        color: white;
 
-        i{
-          font-size: 1.2rem;
-        }
+      .cardBtn{
+        color: white;
+        background-color: $orangeColor;
       }
+      
       .cardLink{
         color: $orangeColor;
         font-size: 14px;
@@ -67,7 +51,7 @@
     
       .mainContainerTitle {
         padding-bottom: 3rem;
-        text-align: left;
+        text-align: center;
         
         p{
           font-size: 1.2rem;
@@ -118,7 +102,7 @@
     background-color: $whiteColor;
 
     h2{
-      text-align: left;
+      text-align: center;
       margin-bottom: 6rem;
     }
 
@@ -262,10 +246,129 @@
     }
   }
   .sectionUsers{
+    padding: 6rem 2rem;
     text-align: center;
 
-    span{
-      font-size: 3rem;      
+    .sectionUsers_title {
+      margin-bottom: 6rem;
+      
+      span{
+        font-size: 3rem;      
+      }
+    }
+  }
+  .cta{
+    padding: 6rem 1rem;
+    background-color: $whiteColor;
+    display: flex;
+    justify-content: center;
+
+    .ctaContainer{
+      text-align: center;
+      position: relative;
+
+      &:after{
+        content: '';
+        position: absolute;
+        width: 30%;
+        height: 5px;
+        display: block;
+        margin-top: 5.9rem;
+        margin-left: 35%;
+        background-color: $orangeColor;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+      }
+      &:before{
+        content: '';
+        position: absolute;
+        width: 30%;
+        height: 5px;
+        display: block;
+        margin-top: -6rem;
+        margin-left: 35%;
+        background-color: $orangeColor;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+      }
+
+      .ctaBtn{
+        color: white;
+        background-color: $orangeColor;
+        margin: 6rem auto 0;
+      }
+    }
+  }
+  .extensaoSection{
+    padding: 6rem 1rem;
+    text-align: center;
+
+    .extensaoBtn{
+      width: max-content;
+      color: $blackColor;
+      box-shadow: 0px 0px 15px -1px #0000003a;
+      margin: 6rem auto 0;
+    }
+
+    div:after{
+      content: '';
+      position: absolute;
+      width: 30%;
+      height: 5px;
+      display: block;
+      margin-top: 5.9rem;
+      margin-left: 32%;
+      background-color: $orangeColor;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+    }
+  }
+  .aboutSection{
+    padding: 6rem 1rem;
+    background-color: $whiteColor;
+
+    h2{
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .aboutContainer{
+      display: flex;
+      flex-direction: column;
+      
+      .aboutChild{
+        padding: 1rem;
+
+        h3{
+          color: $blackColor;
+        }
+
+        .aboutBtn{
+          color: white;
+          background-color: $orangeColor;
+          margin-top: 3rem;
+          width: max-content;
+        }
+
+        .aboutIframe{
+          width: 100%;
+          height: 260px;
+          border-radius: 11px;
+          -webkit-border-radius: 11px;
+          -moz-border-radius: 11px;
+          -ms-border-radius: 11px;
+          -o-border-radius: 11px;
+        }
+      }
     }
   }
 }
@@ -306,14 +409,6 @@
         
         .cardItem{
           width: calc(100% / 4.5);
-  
-          .cardItemTitle{
-  
-          }
-          .cardItemDescription{
-  
-          }
-  
         }
       }
   
@@ -356,6 +451,58 @@
         }
       }
 
+    }
+    .sectionUsers{
+      padding: 6rem 3rem;
+      text-align: center;
+
+      .sectionUsers_title{
+        width: 500px;
+        margin: 0 auto 6rem;
+      }
+    }
+    .cta{
+      padding: 6rem 3rem;
+
+      .ctaContainer{
+        max-width: 700px;
+
+        .ctaBtn{
+          width: 30%;
+        }
+      }
+
+      
+    }
+    .extensaoSection{
+      padding: 6rem 3rem;
+
+      > div{
+        margin: auto;
+        max-width: 650px;
+
+        &:after{
+          width: 16%;
+          margin-top: 5.9rem;
+          margin-left: 15%;
+        }
+      }
+    }
+    .aboutSection{
+      padding: 6rem 3rem;
+  
+      .aboutContainer{
+        flex-direction: row;
+        align-items: center;
+        
+        .aboutChild{
+          padding: 6rem;
+          flex: 1;
+
+          .aboutIframe{
+          }
+        }
+      }
     }
   }
 }

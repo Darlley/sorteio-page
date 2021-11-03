@@ -4,9 +4,11 @@ import Image from 'next/image'
 import thumb from '../public/thumb.png'
 import sorteioThumb from '../public/sorteio-thumb.png'
 import sorteioIcon from '../public/sorteio-icon.png'
+import chromeIcon from '../public/chrome-brands.png'
 
 import Menu from '../components/Menu'
 import Slider from '../components/Slider'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -24,10 +26,10 @@ export default function Home() {
               A novidade da mudança também chegou por aqui. O sorteio.com está
               novinho em folha, mas com a mesma confiança de sempre.
             </p>
-            <button className={styles.cardButtom}>
+            <a className={`btn ${styles.cardBtn}`}>
               <i className="bi bi-star"></i>
               Quero sortear
-            </button>
+            </a>
             <a href="#" className={styles.cardLink}>
               <i className="bi bi-chevron-left"></i>
               Usar a versão antiga
@@ -263,13 +265,61 @@ export default function Home() {
         </section>
         <div className={styles.container}>
           <section className={styles.sectionUsers}>
-            <span>💕</span>
-            <h2>Quem usou, amou!</h2>
-            <p>Veja só quantos influenciadores com mais de 300 mil seguidores já passaram pela gente!</p>
+
+            <div className={styles.sectionUsers_title}>
+              <span>💕</span>
+              <h2>Quem usou, amou!</h2>
+              <p>Veja só quantos influenciadores com mais de 300 mil seguidores já passaram pela gente!</p>
+            </div>
+            
             <Slider />
+
           </section>
         </div>
+        <section className={styles.cta}>
+          <div className={styles.ctaContainer}>
+            <h2>Conheça os nossos preços</h2>
+            <p>Adquira o carregamento VIP e faça sorteios de forma rápida e segura! E se você tem mais de 300 mil seguidores, aproveite as vantagens exclusivas soteio.com para influenciadores digitais.</p>
+            <a href="#" className={`btn ${styles.ctaBtn}`}>Quero conhecer</a>
+          </div>
+        </section>
+        <div className={styles.container}>
+          <section className={styles.extensaoSection}>
+            <div>
+              <h2>Nossa extensão é oficial!</h2>
+              <p>Existem duas maneiras de fazer o sorteio gratuito: ou você conecta com o Facebook ou baixa nossa extensão oficial no Chrome. Não tem segredo nenhum, e o melhor, no próximo sorteio não é necessário fazer nada disso novamente. É só chegar, e sortear!</p>
+
+              <a href="#" className={`btn ${styles.extensaoBtn}`}>
+                <Image 
+                  src={chromeIcon}
+                  width={28}
+                  heigh={28}
+                />
+                Instalar extensão oficial
+              </a>
+            </div>
+          </section>
+        </div>
+        <section className={styles.aboutSection}>
+          <h2>Como funciona?</h2>
+
+          <div className={styles.aboutContainer}>
+            <div className={styles.aboutChild}>
+              <h3>Prático, rápido e muuuuuuito seguro!</h3>
+              <p>Com o sorteio.com não tem segredo, é só digitar o seu @instagram, e-mail, seguir o passo a passo e pronto! Seu sorteio tá no jeito.</p>
+              <p><strong>Ainda tem dúvidas sobre sortear?</strong><br />Sem crise, entre em contato com nosso atentimento pelo chat ou e-mail. Nossa equipe está sempre preparada para te ajudar ;)</p>
+              <a href="#" className={`btn ${styles.aboutBtn}`}>
+                <i className="bi bi-instagram"></i>
+                Sortear no Instagram
+              </a>
+            </div>
+            <div className={styles.aboutChild}>
+              <iframe className={styles.aboutIframe} src="https://www.youtube.com/embed/cEvTJzQ2h6g" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            </div>
+          </div>
+        </section>
       </main>
+      <Footer />
     </>
   )
 }

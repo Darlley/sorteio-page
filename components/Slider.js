@@ -13,12 +13,14 @@ import SwiperCore, { Pagination, Navigation } from 'swiper'
 import Image from 'next/image'
 import elipseCard from '../public/elipse_card.png'
 
+import styles from '../styles/Slider.module.scss'
+
 // install Swiper modules
 SwiperCore.use([Pagination, Navigation])
 
 export default function Slider() {
   return (
-    <>
+    <div className={styles.slider}>
       <Swiper
         slidesPerView={5}
         spaceBetween={10}
@@ -50,6 +52,6 @@ export default function Slider() {
           <Image src={elipseCard} width={130} height={130} />
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   )
 }
