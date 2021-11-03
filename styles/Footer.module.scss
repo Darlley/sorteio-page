@@ -15,14 +15,16 @@
 
     .footer__menu{
       display: flex;
-      color: $blackColor;
       font-weight: bold;
       flex-direction: column;
       padding: 0;
-
+      
+      color: $blackColor;
+      
       .footer__menuItem {
         list-style: none;
         padding: .5rem 0;
+        
       }
     }
     .footer__submenu{
@@ -33,6 +35,10 @@
         list-style: none;
         margin-left: -33px;
         width: max-content;
+
+        a{
+          color: $blackColor;
+        }
       }
     }
 

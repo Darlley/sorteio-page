@@ -118,7 +118,7 @@ export default function Home() {
             <div className={styles.sorteio__item}>
               <div className={styles.itemContainer}>
                 <div>
-                  <Image src={sorteioThumb} width={150} height={150} />
+                  <Image src={sorteioThumb} width={145} height={145} />
                 </div>
 
                 <div className={styles.itemContainerDiv2}>
@@ -191,7 +191,7 @@ export default function Home() {
             <div className={styles.sorteio__item}>
               <div className={styles.itemContainer}>
                 <div>
-                  <Image src={sorteioThumb2} width={150} height={150} />
+                  <Image src={sorteioThumb2} width={145} height={145} />
                 </div>
 
                 <div className={styles.itemContainerDiv2}>
@@ -232,7 +232,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
             <div className={styles.sorteio__item}>
               <span>💫</span>
               <h3>Carregamento VIP</h3>

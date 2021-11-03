@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import Image from 'next/image'
 import logo from '../public/logo.png'
 import selo from '../public/selo-icon.png'
@@ -20,20 +22,37 @@ export default function Footer(){
         </div>
 
         <ul className={styles.footer__menu}>
-          <li className={styles.footer__menuItem}>Sorteios
+          <li className={styles.footer__menuItem}>
+            Sorteios
             <ul className={styles.footer__submenu}>
-              <li className={styles.footer__submenuItem}>Começar um sorteio</li>
+              <li className={styles.footer__submenuItem}>
+                <Link href="/">
+                  <a>Começar um sorteio</a>
+                </Link>
+              </li>
             </ul>
           </li>
           <li className={styles.footer__menuItem}>Produtos
             <ul className={styles.footer__submenu}>
-              <li className={styles.footer__submenuItem}>Preços</li>
+              <li className={styles.footer__submenuItem}>
+                <Link href="/">
+                  <a>Preços</a>
+                </Link>
+              </li>
             </ul>
           </li>
           <li className={styles.footer__menuItem}>Suporte
             <ul className={styles.footer__submenu}>
-              <li className={styles.footer__submenuItem}>Como sortear?</li>
-              <li className={styles.footer__submenuItem}>Fale conosco</li>
+              <li className={styles.footer__submenuItem}>
+                <Link href="/">
+                  <a>Como sortear?</a>
+                </Link>  
+              </li>
+              <li className={styles.footer__submenuItem}>
+                <Link href="/">
+                  <a>Fale conosco</a>
+                </Link>  
+              </li>
             </ul>
           </li>
         </ul>
