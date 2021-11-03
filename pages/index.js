@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.scss'
 import Image from 'next/image'
 import thumb from '../public/thumb.png'
 import sorteioThumb from '../public/sorteio-thumb.png'
+import sorteioThumb2 from '../public/sorteio-thumb-2.png'
 import sorteioIcon from '../public/sorteio-icon.png'
 import chromeIcon from '../public/chrome-brands.png'
 
@@ -53,7 +54,7 @@ export default function Home() {
               <div className={styles.cardContainer}>
                 <div className={styles.cardItem}>
                   <div className={styles.cardItemTitle}>
-                    <i className="bi bi-shield-check"></i>
+                    <i className="bi bi-alarm"></i>
                     <span>Rápido</span>
                   </div>
                   <div className={styles.cardItemDescription}>
@@ -67,38 +68,38 @@ export default function Home() {
                 <div className={styles.cardItem}>
                   <div className={styles.cardItemTitle}>
                     <i className="bi bi-shield-check"></i>
-                    <span>Rápido</span>
+                    <span>Seguro</span>
                   </div>
                   <div className={styles.cardItemDescription}>
                     <p>
-                      Com nossa extensão oficieal e conexão com o Facebook, seu
-                      sorteio vai ser carregado com muita velocidade.
+                      Não precisa de cadastro! Nossa conexão é feita utilizando
+                      a API oficial do Instagram
                     </p>
                   </div>
                 </div>
 
                 <div className={styles.cardItem}>
                   <div className={styles.cardItemTitle}>
-                    <i className="bi bi-shield-check"></i>
-                    <span>Rápido</span>
+                    <i className="bi bi-emoji-sunglasses"></i>
+                    <span>Usado por influencers</span>
                   </div>
                   <div className={styles.cardItemDescription}>
                     <p>
-                      Com nossa extensão oficieal e conexão com o Facebook, seu
-                      sorteio vai ser carregado com muita velocidade.
+                      Somos a plataforma de sorteios mais queridinha dos
+                      influenciadores do Brasil
                     </p>
                   </div>
                 </div>
 
                 <div className={styles.cardItem}>
                   <div className={styles.cardItemTitle}>
-                    <i className="bi bi-shield-check"></i>
-                    <span>Rápido</span>
+                    <i className="bi bi-chat-dots"></i>
+                    <span>100% dos comentários</span>
                   </div>
                   <div className={styles.cardItemDescription}>
                     <p>
-                      Com nossa extensão oficieal e conexão com o Facebook, seu
-                      sorteio vai ser carregado com muita velocidade.
+                      Carregamos 100% dos comentários válidos, deixando seu
+                      sorteio mais confiável e autêntico possível!
                     </p>
                   </div>
                 </div>
@@ -190,7 +191,7 @@ export default function Home() {
             <div className={styles.sorteio__item}>
               <div className={styles.itemContainer}>
                 <div>
-                  <Image src={sorteioThumb} width={150} height={150} />
+                  <Image src={sorteioThumb2} width={150} height={150} />
                 </div>
 
                 <div className={styles.itemContainerDiv2}>
@@ -233,25 +234,27 @@ export default function Home() {
             </div>
 
             <div className={styles.sorteio__item}>
-              <span>🎉</span>
-              <h3>Carregamento gratuito</h3>
+              <span>💫</span>
+              <h3>Carregamento VIP</h3>
               <p>
-                Escolha uma públicação com até 20 mil comentários e sorteie ela
-                gratuitamente! Para fazer isso é muito fácil: basta conectar seu
-                Isntagram com o Facebook ou baixar nossa extensão oficieal para
-                Google Chrome.
+                Com o carregamento VIP você pode sortear posts com quantos comentários quiser e ainda deixar o carregamento acontecer em nuvem, podendo desligar o computador e ir fazer qualquer outra coisa…
               </p>
               <ul>
                 <li>
-                  <i className="bi bi-check-lg"></i> 100% dos comentários
-                  válidos carregados;
+                  <i className="bi bi-check-lg"></i>
+                  <div>
+                    Execução do sorteio totalmente em nuvem
+                    <span className={styles.sorteio__subitem}>[Não perde o carregamento se desligar o computador];</span>
+                  </div>
                 </li>
                 <li>
-                  <i className="bi bi-check-lg"></i> Suporte dedicado;
+                  <i className="bi bi-check-lg"></i> Até 7 dias após a compra para sortear o mesmo post quantas vezes quiser;
                 </li>
                 <li>
-                  <i className="bi bi-check-lg"></i> Conexão segura usand API
-                  oficial do Instagram;
+                  <i className="bi bi-check-lg"></i> Acesso instantâneo aos sorteios em carregamento;
+                </li>
+                <li>
+                  <i className="bi bi-check-lg"></i> Carregamento de mais de 20 mil comentários.
                 </li>
               </ul>
               <a href="#">
@@ -263,36 +266,45 @@ export default function Home() {
         </section>
         <div className={styles.container}>
           <section className={styles.sectionUsers}>
-
             <div className={styles.sectionUsers_title}>
               <span>💕</span>
               <h2>Quem usou, amou!</h2>
-              <p>Veja só quantos influenciadores com mais de 300 mil seguidores já passaram pela gente!</p>
+              <p>
+                Veja só quantos influenciadores com mais de 300 mil seguidores
+                já passaram pela gente!
+              </p>
             </div>
-            
-            <Slider />
 
+            <Slider />
           </section>
         </div>
         <section id="precos" className={styles.cta}>
           <div className={styles.ctaContainer}>
             <h2>Conheça os nossos preços</h2>
-            <p>Adquira o carregamento VIP e faça sorteios de forma rápida e segura! E se você tem mais de 300 mil seguidores, aproveite as vantagens exclusivas soteio.com para influenciadores digitais.</p>
-            <a href="#" className={`btn ${styles.ctaBtn}`}>Quero conhecer</a>
+            <p>
+              Adquira o carregamento VIP e faça sorteios de forma rápida e
+              segura! E se você tem mais de 300 mil seguidores, aproveite as
+              vantagens exclusivas soteio.com para influenciadores digitais.
+            </p>
+            <a href="#" className={`btn ${styles.ctaBtn}`}>
+              Quero conhecer
+            </a>
           </div>
         </section>
         <div className={styles.container}>
           <section className={styles.extensaoSection}>
             <div>
               <h2>Nossa extensão é oficial!</h2>
-              <p>Existem duas maneiras de fazer o sorteio gratuito: ou você conecta com o Facebook ou baixa nossa extensão oficial no Chrome. Não tem segredo nenhum, e o melhor, no próximo sorteio não é necessário fazer nada disso novamente. É só chegar, e sortear!</p>
+              <p>
+                Existem duas maneiras de fazer o sorteio gratuito: ou você
+                conecta com o Facebook ou baixa nossa extensão oficial no
+                Chrome. Não tem segredo nenhum, e o melhor, no próximo sorteio
+                não é necessário fazer nada disso novamente. É só chegar, e
+                sortear!
+              </p>
 
               <a href="#" className={`btn ${styles.extensaoBtn}`}>
-                <Image 
-                  src={chromeIcon}
-                  width={28}
-                  heigh={28}
-                />
+                <Image src={chromeIcon} width={28} heigh={28} />
                 Instalar extensão oficial
               </a>
             </div>
@@ -304,15 +316,31 @@ export default function Home() {
           <div className={styles.aboutContainer}>
             <div className={styles.aboutChild}>
               <h3>Prático, rápido e muuuuuuito seguro!</h3>
-              <p>Com o sorteio.com não tem segredo, é só digitar o seu @instagram, e-mail, seguir o passo a passo e pronto! Seu sorteio tá no jeito.</p>
-              <p><strong>Ainda tem dúvidas sobre sortear?</strong><br />Sem crise, entre em contato com nosso atentimento pelo chat ou e-mail. Nossa equipe está sempre preparada para te ajudar ;)</p>
+              <p>
+                Com o sorteio.com não tem segredo, é só digitar o seu
+                @instagram, e-mail, seguir o passo a passo e pronto! Seu sorteio
+                tá no jeito.
+              </p>
+              <p>
+                <strong>Ainda tem dúvidas sobre sortear?</strong>
+                <br />
+                Sem crise, entre em contato com nosso atentimento pelo chat ou
+                e-mail. Nossa equipe está sempre preparada para te ajudar ;)
+              </p>
               <a href="#" className={`btn ${styles.aboutBtn}`}>
                 <i className="bi bi-instagram"></i>
                 Sortear no Instagram
               </a>
             </div>
             <div className={styles.aboutChild}>
-              <iframe className={styles.aboutIframe} src="https://www.youtube.com/embed/cEvTJzQ2h6g" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              <iframe
+                className={styles.aboutIframe}
+                src="https://www.youtube.com/embed/cEvTJzQ2h6g"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </section>

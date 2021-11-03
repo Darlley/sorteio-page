@@ -132,7 +132,6 @@
       }
       &:nth-child(even){
         span {
-          color: 1px solid red;
           font-size: 5rem;
         }
         ul {
@@ -148,6 +147,12 @@
               color: $orangeColor;
               font-weight: bold;
               font-size: 1.5rem;
+            }
+            
+            div span.sorteio__subitem{
+              display: flex;
+              font-size: .8rem;
+              opacity: .8;
             }
           }
         }
