@@ -8,6 +8,7 @@ import facebookIcon from '../public/facebookIcon.png'
 import sorteioIcon from '../public/sorteio-icon.png'
 
 import styles from '../styles/Footer.module.scss'
+import { Languages } from './Languages'
 
 export default function Footer(){
   return (
@@ -114,8 +115,9 @@ export default function Footer(){
           <span>Termos de serviço</span>
           <span>Política de privacidade</span>
         </div>
+
         <div>
-          PT
+          <Languages />
         </div>
       </div>
     </footer>

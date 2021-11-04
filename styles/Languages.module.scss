@@ -1,0 +1,38 @@
+.languages{
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px -1px #0000003a;
+  position: relative;
+  width: max-content;
+  
+  .languagesContainer{
+
+    &:nth-child(1){
+      display: flex;
+      align-items: center;
+      
+      div {
+        display: flex;
+        align-items: center;
+        padding: 0 .3rem;
+      }
+      div span image{
+        padding: 0;
+      }
+      div p{
+        margin: 0;
+        padding: 0;
+      }
+      .languagesIcon{
+        margin: 0;
+        padding: 0 .2rem;
+      }
+    }
+    &:nth-child(2){
+      display: none;
+      position: absolute;
+    }
+  }
+}
