@@ -1,57 +1,179 @@
-import React, { useRef, useState } from 'react'
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react'
+import {useRef} from 'react'
+import Image from 'next/image';
 
-// Import Swiper styles
-import 'swiper/css'
-import 'swiper/css/pagination'
-import 'swiper/css/navigation'
+import styles from '../styles/Slider.module.scss';
 
-// import Swiper core and required modules
-import SwiperCore, { Pagination, Navigation } from 'swiper'
-
-import Image from 'next/image'
-import elipseCard from '../public/elipse_card.png'
-
-import styles from '../styles/Slider.module.scss'
-
-// install Swiper modules
-SwiperCore.use([Pagination, Navigation])
+import perfilImg1 from '../public/elipse_card.png'; 
+import slideSetaEsquerda from '../public/slide-seta-esquerda.png'; 
+import slideSetaDireita from '../public/slide-seta-direita.png'; 
 
 export default function Slider() {
+  const slider = useRef(null)
+
+  const handleLeftClick = (e) => {
+    e.preventDefault();
+
+    slider.current.scrollLeft -= slider.current.offsetWidth;
+  }
+  const handleRightClick = (e) => {
+    e.preventDefault();
+
+    slider.current.scrollLeft += slider.current.offsetWidth;
+  }
   return (
     <div className={styles.slider}>
-      <Swiper
-        slidesPerView={3}
-        spaceBetween={10}
-        slidesPerGroup={3}
-        loop={true}
-        loopFillGroupWithBlank={true}
-        pagination={{
-          clickable: true
-        }}
-        navigation={true}
-        className="mySwiper"
-      >
-        <SwiperSlide className={styles.slideCard}>
-          <Image src={elipseCard} width={130} height={130} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={elipseCard} width={130} height={130} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={elipseCard} width={130} height={130} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={elipseCard} width={130} height={130} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={elipseCard} width={130} height={130} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={elipseCard} width={130} height={130} />
-        </SwiperSlide>
-      </Swiper>
+      <div className={styles.buttonsContainer}>
+        <button className={styles.buttonsContainerButton} onClick={handleLeftClick} onTouchStart={handleLeftClick}>
+          <Image 
+            src={slideSetaEsquerda}
+            width={60}
+            height={60}
+          />
+        </button>
+        <button className={styles.buttonsContainerButton} onClick={handleRightClick} onTouchStart={handleRightClick}>
+          <Image 
+              src={slideSetaDireita}
+              width={60}
+              height={60}
+            />
+        </button>
+      </div>
+      <div className={styles.slideCards} ref={slider}>
+
+        <div className={styles.slideCard}>
+          <a href="#">
+            <div className={styles.slideCardIconOpen}>
+              <i className="bi bi-arrow-up-right-square"></i>
+            </div>
+            <div className={styles.slideCardContent}>
+              <div className={styles.slideCardContentImage}>
+                <Image 
+                  src={perfilImg1}
+                  width={132}
+                  height={132}
+                />
+              </div>
+              <h3>@alecacaushow</h3>
+              <p>1,3Mi seguidores no Istagram</p>
+            </div>
+          </a>
+        </div>
+
+        <div className={styles.slideCard}>
+          <a href="#">
+            <div className={styles.slideCardIconOpen}>
+              <i className="bi bi-arrow-up-right-square"></i>
+            </div>
+            <div className={styles.slideCardContent}>
+              <div className={styles.slideCardContentImage}>
+                <Image 
+                  src={perfilImg1}
+                  width={132}
+                  height={132}
+                />
+              </div>
+              <h3>@alecacaushow</h3>
+              <p>1,3Mi seguidores no Istagram</p>
+            </div>
+          </a>
+        </div>
+
+        <div className={styles.slideCard}>
+          <a href="#">
+            <div className={styles.slideCardIconOpen}>
+              <i className="bi bi-arrow-up-right-square"></i>
+            </div>
+            <div className={styles.slideCardContent}>
+              <div className={styles.slideCardContentImage}>
+                <Image 
+                  src={perfilImg1}
+                  width={132}
+                  height={132}
+                />
+              </div>
+              <h3>@alecacaushow</h3>
+              <p>1,3Mi seguidores no Istagram</p>
+            </div>
+          </a>
+        </div>
+
+        <div className={styles.slideCard}>
+          <a href="#">
+            <div className={styles.slideCardIconOpen}>
+              <i className="bi bi-arrow-up-right-square"></i>
+            </div>
+            <div className={styles.slideCardContent}>
+              <div className={styles.slideCardContentImage}>
+                <Image 
+                  src={perfilImg1}
+                  width={132}
+                  height={132}
+                />
+              </div>
+              <h3>@alecacaushow</h3>
+              <p>1,3Mi seguidores no Istagram</p>
+            </div>
+          </a>
+        </div>
+
+        <div className={styles.slideCard}>
+          <a href="#">
+            <div className={styles.slideCardIconOpen}>
+              <i className="bi bi-arrow-up-right-square"></i>
+            </div>
+            <div className={styles.slideCardContent}>
+              <div className={styles.slideCardContentImage}>
+                <Image 
+                  src={perfilImg1}
+                  width={132}
+                  height={132}
+                />
+              </div>
+              <h3>@alecacaushow</h3>
+              <p>1,3Mi seguidores no Istagram</p>
+            </div>
+          </a>
+        </div>
+
+        <div className={styles.slideCard}>
+          <a href="#">
+            <div className={styles.slideCardIconOpen}>
+              <i className="bi bi-arrow-up-right-square"></i>
+            </div>
+            <div className={styles.slideCardContent}>
+              <div className={styles.slideCardContentImage}>
+                <Image 
+                  src={perfilImg1}
+                  width={132}
+                  height={132}
+                />
+              </div>
+              <h3>@alecacaushow</h3>
+              <p>1,3Mi seguidores no Istagram</p>
+            </div>
+          </a>
+        </div>
+
+        <div className={styles.slideCard}>
+          <a href="#">
+            <div className={styles.slideCardIconOpen}>
+              <i className="bi bi-arrow-up-right-square"></i>
+            </div>
+            <div className={styles.slideCardContent}>
+              <div className={styles.slideCardContentImage}>
+                <Image 
+                  src={perfilImg1}
+                  width={132}
+                  height={132}
+                />
+              </div>
+              <h3>@alecacaushow</h3>
+              <p>1,3Mi seguidores no Istagram</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
     </div>
   )
 }

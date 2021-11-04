@@ -263,8 +263,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className={styles.container}>
-          <section className={styles.sectionUsers}>
+        <section className={styles.sectionUsers}>
             <div className={styles.sectionUsers_title}>
               <span>💕</span>
               <h2>Quem usou, amou!</h2>
@@ -275,8 +274,7 @@ export default function Home() {
             </div>
 
             <Slider />
-          </section>
-        </div>
+        </section>
         <section id="precos" className={styles.cta}>
           <div className={styles.ctaContainer}>
             <h2>Conheça os nossos preços</h2>
