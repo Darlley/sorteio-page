@@ -5,6 +5,7 @@ import logo from '../public/logo.png'
 import selo from '../public/selo-icon.png'
 import chromeIcon from '../public/chrome-brands.png'
 import facebookIcon from '../public/facebookIcon.png'
+import sorteioIcon from '../public/sorteio-icon.png'
 
 import styles from '../styles/Footer.module.scss'
 
@@ -57,8 +58,20 @@ export default function Footer(){
           </li>
         </ul>
 
-        <div>
+        <div className={styles.section__instagram}>
           <span>Não perca as novidades!</span>
+          <div className={styles.followInstagram}>
+            <div className={styles.followInstagram__containerImagem}>
+              <Image src={sorteioIcon} width={30} height={30} />
+            </div>
+            <div className={styles.followInstagram__containerDescription}>
+              <p>Siga a gente</p>
+              <p><span>@sorteio</span></p>
+            </div>
+            <div className={styles.followInstagram__containerButtom}>
+              <Link href="/"><a>Seguir</a></Link>
+            </div>
+          </div>
         </div>
       </nav>
 
