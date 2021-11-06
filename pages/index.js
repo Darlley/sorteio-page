@@ -10,10 +10,12 @@ import chromeIcon from '../public/chrome-brands.png'
 import Menu from '../components/Menu'
 import Slider from '../components/Slider'
 import Footer from '../components/Footer'
+import Head from '../src/infra/components/Head'
 
 export default function Home() {
   return (
     <>
+    <Head title="Página inicial" />
       <Menu />
       <header className={styles.header}>
         <div className={styles.thumb}>

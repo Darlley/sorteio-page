@@ -3,6 +3,7 @@ import styles from '../styles/Error.module.scss';
 
 import Menu from '../components/Menu';
 import Footer from '../components/Footer'
+import Head from '../src/infra/components/Head'
 
 import { useRouter } from 'next/router'
 
@@ -11,6 +12,7 @@ export default function Custom404(){
   
   return (
     <>
+    <Head title="Página não encontrada" />
     <div className={styles.pageError}>
     <Menu />
       <div className={styles.errorContainer}>
